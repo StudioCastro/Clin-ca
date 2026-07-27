@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-periodontia" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAF1FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-periodontia)"/>
+  <circle cx="400" cy="300" r="190" fill="#FFFFFF"/>
+
+  <path
+    d="M0,-100 C50,-100 80,-70 85,-20 C90,10 85,40 75,65 C68,85 60,100 45,100 C35,100 30,80 15,80 C5,80 5,95 0,95 C-5,95 -5,80 -15,80 C-30,80 -35,100 -45,100 C-60,100 -68,85 -75,65 C-85,40 -90,10 -85,-20 C-80,-70 -50,-100 0,-100 Z"
+    fill="#0F3D91"
+    transform="translate(380,290) scale(1.5)"
+  />
+
+  <path d="M255,340 C255,320 310,305 380,305 C450,305 505,320 505,340 C505,368 450,385 380,385 C310,385 255,368 255,340 Z"
+    fill="#3B82F6"/>
+
+  <circle cx="512" cy="385" r="62" fill="#3B82F6"/>
+  <path d="M512,350 L536,362 L536,384 C536,402 526,416 512,422 C498,416 488,402 488,384 L488,362 Z"
+    fill="#FFFFFF"/>
+  <path d="M501,384 L510,393 L525,373" fill="none" stroke="#3B82F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

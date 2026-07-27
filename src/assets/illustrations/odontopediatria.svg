@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-pediatria" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAF1FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-pediatria)"/>
+  <circle cx="400" cy="300" r="190" fill="#FFFFFF"/>
+
+  <path
+    d="M0,-95 C55,-95 90,-60 90,-5 C90,45 70,90 40,110 C25,120 10,105 0,105 C-10,105 -25,120 -40,110 C-70,90 -90,45 -90,-5 C-90,-60 -55,-95 0,-95 Z"
+    fill="#0F3D91"
+    transform="translate(400,300) scale(1.5)"
+  />
+
+  <circle cx="360" cy="285" r="14" fill="#FFFFFF"/>
+  <circle cx="440" cy="285" r="14" fill="#FFFFFF"/>
+  <circle cx="360" cy="289" r="6" fill="#0F3D91"/>
+  <circle cx="440" cy="289" r="6" fill="#0F3D91"/>
+  <path d="M368,335 C385,352 415,352 432,335" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M545,175 L555,197 L578,203 L555,209 L545,231 L535,209 L512,203 L535,197 Z" fill="#3B82F6"/>
+  <path d="M255,225 L262,240 L278,244 L262,248 L255,263 L248,248 L232,244 L248,240 Z" fill="#3B82F6" opacity="0.7"/>
+</svg>

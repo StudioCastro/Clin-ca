@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-escovacao" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAF1FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-escovacao)"/>
+  <circle cx="400" cy="300" r="190" fill="#FFFFFF"/>
+
+  <path
+    d="M0,-100 C50,-100 80,-70 85,-20 C90,10 85,40 75,65 C68,85 60,100 45,100 C35,100 30,80 15,80 C5,80 5,95 0,95 C-5,95 -5,80 -15,80 C-30,80 -35,100 -45,100 C-60,100 -68,85 -75,65 C-85,40 -90,10 -85,-20 C-80,-70 -50,-100 0,-100 Z"
+    fill="#0F3D91"
+    transform="translate(360,300) scale(1.4)"
+  />
+
+  <g transform="rotate(-28 500 260)">
+    <rect x="470" y="150" width="26" height="150" rx="10" fill="#3B82F6"/>
+    <rect x="452" y="120" width="62" height="46" rx="14" fill="#3B82F6"/>
+    <line x1="462" y1="128" x2="462" y2="158" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <line x1="478" y1="124" x2="478" y2="162" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <line x1="494" y1="128" x2="494" y2="158" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

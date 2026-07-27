@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#F5F5F5"/>
+  <rect y="440" width="800" height="160" fill="#EAF1FF"/>
+
+  <!-- armário ao fundo -->
+  <rect x="60" y="200" width="220" height="240" rx="8" fill="#FFFFFF" stroke="#D8DEE9" stroke-width="4"/>
+  <line x1="170" y1="200" x2="170" y2="440" stroke="#D8DEE9" stroke-width="4"/>
+  <line x1="60" y1="300" x2="280" y2="300" stroke="#D8DEE9" stroke-width="4"/>
+
+  <!-- monitor com raio-x -->
+  <rect x="470" y="150" width="180" height="130" rx="8" fill="#0F3D91"/>
+  <rect x="486" y="164" width="148" height="102" rx="4" fill="#0A2C69"/>
+  <path
+    d="M0,-40 C22,-40 34,-26 36,-6 C38,10 34,22 28,32 C24,38 20,42 14,42 C10,42 8,34 4,34 C2,34 2,40 0,40 C-2,40 -2,34 -4,34 C-8,34 -10,42 -14,42 C-20,42 -24,38 -28,32 C-34,22 -38,10 -36,-6 C-34,-26 -22,-40 0,-40 Z"
+    fill="#EAF1FF"
+    transform="translate(560,215) scale(1.4)"
+  />
+  <rect x="540" y="284" width="40" height="18" fill="#0F3D91"/>
+
+  <!-- braço + refletor -->
+  <line x1="330" y1="60" x2="330" y2="170" stroke="#3B82F6" stroke-width="10"/>
+  <line x1="330" y1="170" x2="410" y2="200" stroke="#3B82F6" stroke-width="10"/>
+  <circle cx="415" cy="205" r="46" fill="#FFFFFF" stroke="#3B82F6" stroke-width="8"/>
+  <circle cx="400" cy="195" r="7" fill="#EAF1FF" stroke="#3B82F6" stroke-width="3"/>
+  <circle cx="420" cy="190" r="7" fill="#EAF1FF" stroke="#3B82F6" stroke-width="3"/>
+  <circle cx="432" cy="208" r="7" fill="#EAF1FF" stroke="#3B82F6" stroke-width="3"/>
+  <circle cx="410" cy="218" r="7" fill="#EAF1FF" stroke="#3B82F6" stroke-width="3"/>
+  <circle cx="393" cy="212" r="7" fill="#EAF1FF" stroke="#3B82F6" stroke-width="3"/>
+
+  <!-- cadeira odontológica (perfil reclinado) -->
+  <ellipse cx="330" cy="470" rx="90" ry="14" fill="#111111" opacity="0.15"/>
+  <rect x="315" y="410" width="30" height="62" fill="#111111"/>
+  <ellipse cx="330" cy="410" rx="55" ry="14" fill="#1A1A1A"/>
+
+  <g transform="translate(300,240) rotate(-16)">
+    <rect x="-42" y="-6" width="84" height="185" rx="38" fill="#0F3D91"/>
+    <rect x="-34" y="-46" width="68" height="55" rx="26" fill="#0A2C69"/>
+  </g>
+
+  <path d="M270,330 Q265,400 340,405 L470,405 Q500,405 500,378 L500,368 Q500,345 470,345 L300,345 Z" fill="#0F3D91"/>
+  <rect x="455" y="352" width="70" height="30" rx="15" fill="#3B82F6"/>
+
+  <!-- instrumentais -->
+  <line x1="560" y1="330" x2="620" y2="300" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+  <line x1="560" y1="350" x2="625" y2="330" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+  <line x1="560" y1="370" x2="620" y2="365" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M540,300 C520,300 510,320 510,345 C510,370 520,390 540,390" fill="none" stroke="#0F3D91" stroke-width="10" stroke-linecap="round"/>
+</svg>

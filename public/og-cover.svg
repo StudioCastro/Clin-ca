@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F3D91"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path
+    d="M0,-100 C50,-100 80,-70 85,-20 C90,10 85,40 75,65 C68,85 60,100 45,100 C35,100 30,80 15,80 C5,80 5,95 0,95 C-5,95 -5,80 -15,80 C-30,80 -35,100 -45,100 C-60,100 -68,85 -75,65 C-85,40 -90,10 -85,-20 C-80,-70 -50,-100 0,-100 Z"
+    fill="#FFFFFF"
+    transform="translate(600,260) scale(1.15)"
+  />
+  <text x="600" y="430" font-family="Georgia, 'Times New Roman', serif" font-size="48" fill="#FFFFFF" text-anchor="middle" font-weight="600">Sorriso Odontologia</text>
+  <text x="600" y="475" font-family="Arial, sans-serif" font-size="24" fill="#EAF1FF" text-anchor="middle" letter-spacing="2">ODONTOLOGIA DE ALTO PADRÃO</text>
+</svg>

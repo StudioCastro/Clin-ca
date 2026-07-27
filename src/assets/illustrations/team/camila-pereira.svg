@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <circle cx="200" cy="200" r="200" fill="#EAF1FF"/>
+
+  <!-- rabo de cavalo -->
+  <path d="M264,150 C300,170 310,230 285,290 C275,265 270,230 260,205 Z" fill="#5A3A22"/>
+
+  <!-- corpo / polo -->
+  <path d="M80,400 C80,320 130,290 200,290 C270,290 320,320 320,400 Z" fill="#0F3D91"/>
+  <path d="M175,296 L200,330 L225,296 L210,285 L190,285 Z" fill="#FFFFFF"/>
+  <circle cx="200" cy="345" r="9" fill="#FFFFFF" opacity="0.85"/>
+
+  <!-- pescoço -->
+  <rect x="182" y="250" width="36" height="50" rx="14" fill="#F2C9A0"/>
+
+  <!-- cabeça -->
+  <ellipse cx="200" cy="195" rx="76" ry="84" fill="#F6D2AA"/>
+
+  <!-- cabelo preso -->
+  <path d="M124,180 C120,118 155,90 200,90 C245,90 280,118 276,180 C268,150 255,145 250,160 C250,130 150,130 150,160 C145,145 132,150 124,180 Z" fill="#5A3A22"/>
+  <path d="M255,150 C270,148 278,158 274,172 C268,162 260,158 253,160 Z" fill="#5A3A22"/>
+
+  <!-- olhos -->
+  <circle cx="172" cy="195" r="7" fill="#111111"/>
+  <circle cx="228" cy="195" r="7" fill="#111111"/>
+
+  <!-- sorriso -->
+  <path d="M170,225 C182,240 218,240 230,225" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- brinco -->
+  <circle cx="270" cy="220" r="5" fill="#3B82F6"/>
+</svg>

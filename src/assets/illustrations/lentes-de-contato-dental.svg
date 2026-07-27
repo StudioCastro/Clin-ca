@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-lentes" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAF1FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-lentes)"/>
+  <circle cx="400" cy="300" r="190" fill="#FFFFFF"/>
+
+  <path
+    d="M0,-100 C50,-100 80,-70 85,-20 C90,10 85,40 75,65 C68,85 60,100 45,100 C35,100 30,80 15,80 C5,80 5,95 0,95 C-5,95 -5,80 -15,80 C-30,80 -35,100 -45,100 C-60,100 -68,85 -75,65 C-85,40 -90,10 -85,-20 C-80,-70 -50,-100 0,-100 Z"
+    fill="#0F3D91"
+    transform="translate(400,300) scale(1.5)"
+  />
+
+  <path
+    d="M0,-95 C35,-88 55,-55 55,0 C55,45 42,80 22,98 C30,65 32,25 28,-15 C24,-50 14,-78 0,-95 Z"
+    fill="#FFFFFF" opacity="0.55"
+    transform="translate(400,300) scale(1.5)"
+  />
+
+  <path d="M560,190 L570,212 L592,220 L570,228 L560,250 L550,228 L528,220 L550,212 Z" fill="#3B82F6"/>
+</svg>
