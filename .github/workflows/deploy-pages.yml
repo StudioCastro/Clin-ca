@@ -41,7 +41,7 @@ jobs:
       - name: Add SPA fallback (404.html)
         # GitHub Pages não faz rewrite de rotas no servidor. Servir o mesmo index.html em
         # qualquer caminho não encontrado permite que o React Router assuma a navegação no
-        # cliente para deep links (ex.: /Clin-ca/tratamentos acessado direto).
+        # cliente para deep links (ex.: /clinica-odontologica/tratamentos acessado direto).
         run: cp dist/index.html dist/404.html
 
       - name: Configure Pages
