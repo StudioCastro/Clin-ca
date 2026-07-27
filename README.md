@@ -3,6 +3,8 @@
 Site institucional premium para clínica odontológica, construído com React 19, Vite, Tailwind CSS 4,
 React Router, Framer Motion, GSAP, Swiper, React Hook Form + Zod e Cloudflare Turnstile.
 
+**Site publicado:** https://studiocastro.github.io/ClinicaOdontologica/
+
 > Todo o conteúdo (nome da clínica, endereço, equipe, depoimentos, artigos do blog) é
 > **placeholder fictício**, centralizado em `src/constants/` e `src/data/`. Endereço, telefone,
 > e-mail e CROs são inventados (não correspondem a uma clínica real). Substitua por informações
