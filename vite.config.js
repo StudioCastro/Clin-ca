@@ -5,6 +5,9 @@ import viteCompression from 'vite-plugin-compression'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Raiz por padrão (Cloudflare Pages, Netlify, dev local). Em deploy de projeto no GitHub
+  // Pages (ex.: usuario.github.io/repo/), a Action de deploy define VITE_BASE_PATH=/repo/.
+  base: process.env.VITE_BASE_PATH || '/',
   plugins: [
     react(),
     tailwindcss(),

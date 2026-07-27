@@ -25,22 +25,31 @@ function withSuspense(Component) {
   )
 }
 
-export const router = createBrowserRouter([
-  {
-    element: <RootLayout />,
-    children: [
-      { path: PATHS.home, element: withSuspense(Home) },
-      { path: PATHS.about, element: withSuspense(About) },
-      { path: PATHS.treatments, element: withSuspense(Treatments) },
-      { path: PATHS.treatmentDetail(), element: withSuspense(TreatmentDetail) },
-      { path: PATHS.team, element: withSuspense(Team) },
-      { path: PATHS.testimonials, element: withSuspense(Testimonials) },
-      { path: PATHS.blog, element: withSuspense(Blog) },
-      { path: PATHS.blogPost(), element: withSuspense(BlogPost) },
-      { path: PATHS.contact, element: withSuspense(Contact) },
-      { path: PATHS.privacyPolicy, element: withSuspense(PrivacyPolicy) },
-      { path: PATHS.terms, element: withSuspense(Terms) },
-      { path: '*', element: withSuspense(NotFound) },
-    ],
-  },
-])
+// Em deploy de projeto no GitHub Pages a Action publica em /repo/, então o app precisa saber
+// disso para montar as rotas e os links corretamente (import.meta.env.BASE_URL segue o `base`
+// configurado no vite.config.js, incluindo a barra final — removida aqui pois o React Router
+// espera o basename sem barra no final).
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+export const router = createBrowserRouter(
+  [
+    {
+      element: <RootLayout />,
+      children: [
+        { path: PATHS.home, element: withSuspense(Home) },
+        { path: PATHS.about, element: withSuspense(About) },
+        { path: PATHS.treatments, element: withSuspense(Treatments) },
+        { path: PATHS.treatmentDetail(), element: withSuspense(TreatmentDetail) },
+        { path: PATHS.team, element: withSuspense(Team) },
+        { path: PATHS.testimonials, element: withSuspense(Testimonials) },
+        { path: PATHS.blog, element: withSuspense(Blog) },
+        { path: PATHS.blogPost(), element: withSuspense(BlogPost) },
+        { path: PATHS.contact, element: withSuspense(Contact) },
+        { path: PATHS.privacyPolicy, element: withSuspense(PrivacyPolicy) },
+        { path: PATHS.terms, element: withSuspense(Terms) },
+        { path: '*', element: withSuspense(NotFound) },
+      ],
+    },
+  ],
+  { basename },
+)

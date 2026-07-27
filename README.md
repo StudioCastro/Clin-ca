@@ -89,8 +89,11 @@ scripts/
   register-asset-loader.mjs     registra o loader acima (usado via `node --import`)
 public/
   robots.txt, _headers, site.webmanifest, og-cover.svg
-  favicon.svg, favicon.ico, favicon-16x16.png, favicon-32x32.png,
+  favicon.ico, favicon-16x16.png, favicon-32x32.png,
   apple-touch-icon.png, icon-192.png, icon-512.png
+.github/workflows/
+  ci.yml            lint + build a cada push/PR
+  deploy-pages.yml  build + deploy no GitHub Pages a cada push na main
 ```
 
 ## Favicon
@@ -102,3 +105,23 @@ suave em tamanhos grandes — para produção, o ideal é recriar o ícone a par
 vetorial real e regenerar os tamanhos. Não há mais favicon em SVG: nem todo navegador suporta
 `<link rel="icon" type="image/svg+xml">` (Safari, por exemplo, ignora), então o `index.html`
 depende só do conjunto ICO/PNG, que funciona em todos.
+
+## Deploy no GitHub Pages
+
+O workflow `.github/workflows/deploy-pages.yml` builda e publica o site automaticamente a cada
+push na `main`. **Requer uma configuração manual única**, feita pela interface do GitHub (não dá
+pra automatizar por git): em **Settings → Pages → Build and deployment → Source**, troque para
+**"GitHub Actions"** (o padrão é "Deploy from a branch", que serve os arquivos crus do repositório
+sem buildar nada — foi isso que causou a tela branca, já que `index.html` referenciava
+`/src/main.jsx`, um JSX não compilado que o navegador não consegue executar diretamente).
+
+Como o GitHub Pages publica projetos em `usuario.github.io/<nome-do-repo>/` (não na raiz), o
+workflow builda com `VITE_BASE_PATH=/<nome-do-repo>/`, que o `vite.config.js` usa para prefixar
+todos os assets e o `src/routes/router.jsx` usa como `basename` do React Router — sem isso, os
+arquivos JS/CSS e as rotas apontariam para a raiz errada e a página ficaria em branco mesmo com o
+build correto. Também é gerado um `404.html` (cópia do `index.html`) para que links diretos para
+rotas internas (ex.: `/tratamentos`) funcionem, já que o GitHub Pages não faz rewrite de rotas no
+servidor.
+
+Para deploy em domínio próprio/raiz (Cloudflare Pages, Netlify, Vercel), não defina
+`VITE_BASE_PATH` — o padrão já é `/`.
